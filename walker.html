@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Example</title>
+    <style>
+        body, html {
+            margin: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .object-container {
+            position: relative;
+            width: 100%;
+            height: 80%; /* Adjusted to leave space for the footer */
+        }
+        .object-container object {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 20%; /* Adjusted to 20% of the window height */
+            background-color: white; /* Solid white background */
+            color: black; /* Adjust text color for contrast */
+            text-align: center;
+            padding: 20px;
+            box-sizing: border-box;
+            font-size: 18px; /* Adjust the font size as needed */
+            z-index: 1000; /* Ensure the footer is on top */
+        }
+    </style>
+</head>
+<body>
+    <div class="object-container">
+        <object data="https://cd4e5bwi4ce-61kst9wg6qs50w.hop.clickbank.net" type="text/html">
+            <p>Fallback content: Your browser does not support embedding this content.</p>
+        </object>
+    </div>
+    <div class="footer">
+        This is the footer. Adjust its height and content as needed.
+    </div>
+</body>
+</html>
